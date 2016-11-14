@@ -1,12 +1,15 @@
 language: node_js
 node_js:
-  - "6.1"
-  - "6"
-  - "0.12"
-  - "iojs"
+- '6.1'
+- '6'
+- '0.12'
+- iojs
 sudo: false
 cache:
   directories:
-    - node_modules
+  - node_modules
 notifications:
   email: false
+  slack:
+    rooms:
+      secure: sSqmMf8ntyiE98oNsVv7S8kQGMctVkNL7vMGFD1VRcmI3G1RviQuU2hiNW2kpbpXiCmOQgRj4XN8kN99zZIZBjQvUXZPfLNF9V9LRinfkqz/Pgp09c9UbB6ESQrxeN3wu027+jNyK5Ci8MyHbc8S4ClONc0KPWV3zBUUzL7ZrdqwORuCcfpECeZ7EFRIB0cSCn8WsblrLmH6ZikXAGKePoPhKHazTO1/aZIeKzjiiyxh3+PkaJ6SPo3SQjwPbdXFnNakkwyB3691xC0KcSFJE2I9iUzR2bX4Wx50Ytpj4G/tSmueG/sbIc9o5mzm0FoQ2IkYn2Yu9Z9GR4SGk3ugx2wqNCfcsEmegHyCgvDeQUQIihPaO+ympLG2YeAESomIyLTOzzAVNOoQRFqbXSWwfahmRudf3Jfo+6XCCy7dlZHFKjtfAISKSfi1HiB19jHYwZsVQ3vUkVOinA3uXm3ngNrlvG3MxgYQ9CfqEue1gSaD01yKhXLlNzxwoI73XWHIRutp9ccQALdY399US1Nxvv1wltCeAIKzurlOnH5rb7pcdaguRic1ZwB7rGjcwNk3jDSN706ux2o6HhZVXlEKM8ptILcZzx26kABjjGHPrfgAA0+EgaGoH7Ck7APDuUT8gTQYs4gYirW12q/FVy84X8oVUQetDlaifR9wdL3I2iQ=
