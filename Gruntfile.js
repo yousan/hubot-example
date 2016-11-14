@@ -20,8 +20,8 @@ module.exports = function (grunt) {
     },
     watch: {
       files: ['Gruntfile.js', 'src/**/*.coffee', 'test/**/*.coffee'],
-      tasks: ['test']
-    }
+      tasks: ['test'],
+    },
   });
 
   // load all grunt tasks

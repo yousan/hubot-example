@@ -13,6 +13,7 @@
     "url": "https://github.com/hubot-scripts/hubot-example/issues"
   },
   "dependencies": {
+    "co": "^4.6.0",
     "fs": "0.0.1-security"
   },
   "peerDependencies": {

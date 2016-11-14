@@ -18,6 +18,24 @@ config =
   path: process.env.HUBOT_FILE_BRAIN_PATH
 
 module.exports = (robot) ->
+  robot.respond /(\S+)$/, (msg) ->
+    message = msg.match[1]
+    robot.brain.set 'example', message
+    msg.send message
+
+  robot.respond /brain (.*)$/, (msg) ->
+    message = msg.match[1]
+    console.log message
+    robot.brain.set 'example', message
+    msg.send message
+
+  robot.respond /get out$/, (msg) ->
+    message = msg.match[1]
+    console.log 'deteke!'
+    message = robot.brain.get 'example'
+    msg.send message
+
+
   unless config.path?
     robot.logger.error 'process.env.HUBOT_FILE_BRAIN_PATH is not defined'
     return
@@ -36,3 +54,4 @@ module.exports = (robot) ->
   robot.brain.on 'save', save
 
   load()
+
